@@ -1,0 +1,43 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>연봉정보 및 어쩌구</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"/>
+</head>
+
+<body>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">이름</th>
+        <th scope="col">이메일</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="data : ${datas}">
+        <td scope="row" th:text="${data.seq}"></td>
+        <td th:text="${data.name}"></td>
+        <td th:text="${data.residentRegistNo}"></td>
+        <td th:text="${data.dateOfBirth}"></td>
+        <td th:text="${data.incomeClassification}"></td>
+        <td th:text="${data.totalPayment}"></td>
+        <td th:text="${data.incomeTaxRate}"></td>
+        <td th:text="${data.incomeTax}"></td>
+        <td th:text="${data.actualPayments}"></td>
+        <td th:text="${data.companyName}"></td>
+        <td th:text="${data.companyRegistNo}"></td>
+        <td th:text="${data.paymentDate}"></td>
+        <td th:text="${data.incomeDetails}"></td>
+        <td th:text="${data.businessStartDate}"></td>
+        <td th:text="${data.businessEndDate}"></td>
+        <td th:text="${data.deliveryCompliance}"></td>
+        <td th:text="${data.workQuality}"></td>
+        <td th:text="${data.satisfaction}"></td>
+        <td th:text="${data.overallRating}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
