@@ -12,12 +12,28 @@
     <tr>
         <th scope="col">#</th>
         <th scope="col">이름</th>
-        <th scope="col">이메일</th>
+        <th scope="col">주민등록번호</th>
+        <th scope="col">생년월일</th>
+        <th scope="col">소득구분</th>
+        <th scope="col">총지급액</th>
+        <th scope="col">소득세율</th>
+        <th scope="col">소득세</th>
+        <th scope="col">실지급액</th>
+        <th scope="col">기업명</th>
+        <th scope="col">사업자등록번호</th>
+        <th scope="col">지급일</th>
+        <th scope="col">소득내역</th>
+        <th scope="col">업무시작일</th>
+        <th scope="col">업무종료일</th>
+        <th scope="col">납기준수</th>
+        <th scope="col">업무품질</th>
+        <th scope="col">만족도</th>
+        <th scope="col">전체평점</th>
     </tr>
     </thead>
     <tbody>
     <tr th:each="data : ${datas}">
-        <td scope="row" th:text="${data.seq}"></td>
+        <td th:text="${data.id}"></td>
         <td th:text="${data.name}"></td>
         <td th:text="${data.residentRegistNo}"></td>
         <td th:text="${data.dateOfBirth}"></td>
